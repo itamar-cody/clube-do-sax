@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube do Sax - Login</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎷 Clube do Sax</h1>
+
+        <div id="telaLogin">
+            <h2>Entrar</h2>
+            <input type="text" id="usuarioLogin" placeholder="Usuário">
+            <input type="password" id="senhaLogin" placeholder="Senha">
+            <button onclick="entrarSistema()">Entrar</button>
+            <p>Ainda não tem conta?</p>
+            <button class="link" onclick="mostrarCadastro()">Cadastrar-se</button>
+        </div>
+
+        <div id="telaCadastro" style="display: none;">
+            <h2>Criar Conta</h2>
+            <input type="text" id="novoUsuario" placeholder="Escolha um nome de usuário">
+            <input type="password" id="novaSenha" placeholder="Crie uma senha">
+            <button onclick="cadastrarUsuario()">Cadastrar</button>
+            <p>Já tem conta?</p>
+            <button class="link" onclick="mostrarLogin()">Voltar ao login</button>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

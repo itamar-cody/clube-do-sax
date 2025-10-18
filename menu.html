@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube do Sax - Menu Principal</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎶 Bem-vindo ao Clube do Sax 🎷</h1>
+        <p id="usuarioLogado"></p>
+
+        <h2>Escolha o tipo de Sax</h2>
+        <div class="menu-botoes">
+            <button onclick="abrirInstrumento('reto')">Sax Reto</button>
+            <button onclick="abrirInstrumento('alto')">Sax Alto</button>
+            <button onclick="abrirInstrumento('tenor')">Sax Tenor</button>
+            <button onclick="abrirInstrumento('baritono')">Sax Barítono</button>
+        </div>
+
+        <button class="sair" onclick="sair()">Sair</button>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

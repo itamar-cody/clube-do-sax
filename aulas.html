@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube do Sax - Aulas</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="tituloInstrumento"></h1>
+
+        <h2>Nova Aula / Lição</h2>
+        <input type="text" id="tituloAula" placeholder="Título da aula">
+        <textarea id="descricaoAula" placeholder="Descrição da lição" rows="4"></textarea>
+
+        <label>Enviar imagem:</label>
+        <input type="file" id="imagemAula" accept="image/*">
+
+        <label>Enviar vídeo:</label>
+        <input type="file" id="videoAula" accept="video/*">
+
+        <label>Enviar áudio:</label>
+        <input type="file" id="audioAula" accept="audio/*">
+
+        <button onclick="salvarAula()">Salvar Aula</button>
+        <button class="sair" onclick="voltarMenu()">Voltar ao Menu</button>
+
+        <h2>📚 Aulas Cadastradas</h2>
+        <div id="listaAulas"></div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
